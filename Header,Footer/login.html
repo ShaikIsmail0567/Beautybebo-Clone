@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-   
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="banner">
@@ -15,8 +15,8 @@
     
   
     <div id="headermiddle">
-        <div id="logo" >
-            <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="logo" id="logon" >
+        <div class="logo">
+            <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="logo">
         </div>
     
     <div id="searchbar">
@@ -55,8 +55,7 @@
                 <div id="user"><img
                         src="./user.jpg"
                         alt=""></div>
-                <!-- <h3 id="UserName"> My Account</h3> -->
-                <a href="./login.html">My Account</a>  
+                <h3 id="UserName" ></a> My Account</h3>
             </div>
         </div>
  </div> 
@@ -444,8 +443,32 @@
         </div>
     
  </div>
+ <div id="CUSTOMERLOGIN">
+    <h2>CUSTOMER LOGIN</h2>
+</div>
  <div class="abovefooterimg">
-    <img src="	https://www.beautybebo.com/pub/media/ads/1599-Forent-banner-4.gif" alt="gif">
+
+    <div id="signin">
+        <form >
+            <p>REGISTERED CUSTOMERS</p>
+            <hr>
+            <p>If you have an account, sign in with your email address.</p>
+            <p>Email *</p>
+            <input type="email" id="emailinput">
+            <p>Password *</p>
+            <input type="password" id="passinput">
+            <div id="signinbtn"> SIGN IN</div>
+            <!-- <input id="signinbtn" type="submit" name="submit" value="SIGN IN" /> -->
+            <p>Forgot Your Password?</p>
+            
+        </form>
+    </div>
+    <div id="NEW">
+        <p>NEW CUSTOMERS</p>
+        <hr>
+        <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p>
+        <div id="Createaccount"> <a href="./signup.html">CREATE AN ACCOUNT</a> </div>
+    </div>
  </div>
  <div id="footer">
     <div id="footerelements0">
@@ -512,4 +535,4 @@
  </div>
 </body>
 </html>
-<script src="./index.js"></script>
+<script src="./login.js"></script>
