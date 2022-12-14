@@ -73,7 +73,7 @@
     align-items: center;
     
 }
-.logo{
+#logo{
     margin-left: 50px;
 }
 
@@ -111,8 +111,12 @@
     cursor: pointer;
     
 }
-#Acc>h3{
+#Acc>a{
     cursor: pointer;
+    text-decoration: none;
+    color: #232323;
+    font-size: 20px;
+    font-weight: 500;
 }
 #user>img {
     height: 80%;
