@@ -14,3 +14,4 @@ start()
       document.getElementById("slideshow").append(slideImg);
     }, 3000);
   }
+

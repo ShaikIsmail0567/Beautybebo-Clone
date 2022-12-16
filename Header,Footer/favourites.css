@@ -1,0 +1,38 @@
+#sidemenu{
+    width: 25%;
+    height: 25%;
+   margin-top: 20px;
+    /* border: 2px solid black; */
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #666666;
+    
+    font-weight: 400;
+
+}
+#sidemenu ul li{
+    text-decoration: none;
+    list-style: none;
+    line-height: 2.66;
+}
+#sidemenu ul li:hover{
+    cursor: pointer;
+    background-color: #c9bfbf;
+}
+#sidemenu>img{
+    margin-top: 100px;
+}
+#container1{
+    border: 2px solid black;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+#wishproducts{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}

@@ -1,0 +1,17 @@
+#productscontainer{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    gap: 10px;
+}
+#productscontainer>div{
+    /* border: 2px solid black; */
+    text-align: center;
+    width: 90%;
+    margin: auto;
+   
+    border: 1px solid #faf1f1;
+}
