@@ -3,8 +3,8 @@
     padding: 0px;
 }
 .banner>img{
-    /* width: 100%;    */
-    margin-left: 12px;
+    width: 100%;   
+    /* margin-left: 12px; */
 }
 #logo>a>img{
     width: 240px;
@@ -142,7 +142,7 @@
 }
 #container {
     background-color: #dd0285;
-    width: 100%;
+    width: 95%;
     height: 50px;
     display: flex;
     justify-content: space-between;
