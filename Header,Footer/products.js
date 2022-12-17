@@ -446,6 +446,27 @@ let data = [
         });
         let favourite=document.createElement("button")
         favourite.innerText="Add To Cart"
+
+      
+        favourite.addEventListener("click",()=>{
+            let cartdata=JSON.parse(localStorage.getItem("Addtocart"))||[];
+            let cartadded=false;
+            for(let i=0;i<cartdata.length;i++){
+              if(cartdata[i].id===element.id){
+                cartadded=true;
+                break;
+              }
+            }
+            if(cartadded==true){
+              alert("Product Already in cart")
+            } else{
+              cartdata.push({...element})
+              localStorage.setItem("Addtocart",JSON.stringify(cartdata))
+              alert("Product Added To Cart")
+            }
+            displayproducts(data)
+        });
+
         div.append(img,name,price,cart,favourite)
         container.append(div)
     })

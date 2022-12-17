@@ -26,13 +26,48 @@
     margin-top: 100px;
 }
 #container1{
+
+    /* border: 2px solid black; */
+
     border: 2px solid black;
+
     width: 95%;
     display: flex;
     justify-content: space-between;
 }
 #wishproducts{
+
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    width: 90%;
+    margin: auto;
+   margin-top: 5px;
+    /* border: 1px solid #faf1f1; */
+}
+#wishproducts>div{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #faf1f1;
+    /* margin-top: 5px; */
+}
+#wishproducts>div>button{
+    border: 0;
+    height: 25px;
+    width: 100px; 
+    color: white;
+    cursor: pointer;
+    background-color: #dd0285;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 5px;
+
     border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
 }

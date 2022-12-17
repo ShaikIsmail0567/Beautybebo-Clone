@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
     <div class="banner">
         <img  src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="headerbanner">
     </div>
-    
-  
     <div id="headermiddle">
-        <div class="logo">
-            <a href="./index.html"><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="logo" id="logon" ></a>
+        <div id="logo" >
+            <!-- <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="logo" id="logon" > -->
+            <a href="./index.html"><img src="./logo.jpeg" alt="logo" id="logon" ></a>
         </div>
     
     <div id="searchbar">
@@ -51,14 +51,12 @@
          <div id="subS"><button><img src="./icons8-search-30.png" alt=""></button></div>
     </div>    
         <div id="wS">
-
             <div class="whishlist">  <a href="./favourites.html"><img src="https://logodix.com/logo/1332846.png" alt="" ></a></div>
-
             <div id="Acc">
                 <div id="user"><img
                         src="./user.jpg"
                         alt=""></div>
-                <h3 id="UserName" ></a> My Account</h3>
+                <a href="./login.html">My Account</a>  
             </div>
         </div>
  </div> 
@@ -68,7 +66,7 @@
             <nav id="navbar">
             <ul>
                 <li>
-                    <a href="#">MAKEUP </a>
+                    <a href="products.html">MAKEUP </a>
                     <div class="megamenu">
                         <div class="megamenuitems" >
                             <h3>FACE</h3>
@@ -446,59 +444,87 @@
         </div>
     
  </div>
- <div id="CUSTOMERLOGIN">
-    <h2>CREATE NEW CUSTOMER ACCOUNT</h2>
-</div>
- <div class="abovefooterimg">
-    <form>
-        <p>PERSONAL INFORMATION</p>
-        <hr>
-        <div id="names">
-            <div id="firstname">
-                <label for="firstname" class="label">First Name *</label>
-              <div class="names">
-                <input type="text" id="fname">
-              </div>
-         </div>
-         <div id="lastname">
-                <label for="lastname" class="label">Last Name *</label>
-            <div class="names">
-                <input type="text" id="lname">
+
+ <div class="open-div"></div>
+
+    <h2 style="margin-left:50px ;">SHOPPING CART</h2>
+    <div id="mainDIV">
+
+        <div id="banner">
+            <div id="ite">
+                <p>ITEMS</p>
+            </div>
+            <div id="PQS">
+                <div>
+                    <p>PRICE</p>
+                </div>
+                <div>
+                    <p>QTY</p>
+                </div>
+                <div>
+                    <P>SUBTOTAL</P>
+                </div>
             </div>
         </div>
+        <div id="okay">
+            <div id="main">
+            </div>
+            <div id="continue">
+                <div id="CS">
+                    <p>CONTINUE SHOPPING</p>
+                </div>
+                <div id="US">
+                    <p>UPDATE SHOPPING CART</p>
+                </div>
+            </div>
         </div>
-     
-    <div id="checkbox">
-        <input type="checkbox"> Sign Up for Newsletter
+
+        <div id="right">
+            <div id="upper">
+                <p>SUMMARY</p>
+                <div id="container1">
+                    <p>ESTIMATE SHIPPING AND TAX</p>
+                  
+                </div>
+               
+                <div id="subtotal">
+                    <span>Subtotal</span>
+                    <h4 style="margin-left:200px ;">&#8377</h4>
+                    <h3 id="total"></h3>
+                </div>
+                <div id="shipping">
+                    <span>Shipping charges</span>
+                    <h4 style="margin-left:200px ;">&#8377</h4>
+                    <h3>55.0</h3>
+                </div>
+                <div id="Ototal">
+                    <span>Order Total Incl.GST</span>
+                    <h4 style="margin-left:150px;">&#8377</h4>
+                    <h3 id="wholeTot"></h3>
+                </div>
+                <div id="dis">
+                    <h4>APPLY DISCOUNT CODE HERE</h4>
+                    <h2>></h2>
+                </div>
+                <!-- here -->
+
+            </div>
+            <div id="lower">
+                <div id="pinki">
+                    <h4>PROCEED TO CHECKOUT</h4>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="emailid">
-        <label for="email" class="label">Email *</label>
-        <div class="names">
-        <input type="email" id="Email">
-       </div>
-    </div>
-    <div id="phone">
-        <label for="number" class="label">Phone *</label>
-        <div class="names">
-        <input type="number" id="Num">
-       </div>
-    </div>
-    <div id="password">
-        <label for="password" class="label">Password *</label>
-        <div class="names">
-        <input type="password" id="pass">
-       </div>
-    </div>
-    <div id="confirmpassword">
-        <label for="password" class="label">Confirm Password *</label>
-        <div class="names">
-        <input type="password" id="confirmpass">
-       </div>
-    </div>
-    <input id="submit" type="submit" name="CREATE AN ACCOUNT" value="CREATE AN ACCOUNT" id="Createaccount"/>
-    </form>
-  
- </div>
+
+
+
+
+
+
+
+
+
  <div id="footer">
     <div id="footerelements0">
         <h4>CONTACT INFO</h4>
@@ -564,4 +590,5 @@
  </div>
 </body>
 </html>
-<script src="./signup.js"></script>
+<!-- <script src="./index.js"></script> -->
+<script src="./cart.js"></script>
