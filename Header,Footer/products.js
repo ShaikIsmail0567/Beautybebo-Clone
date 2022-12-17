@@ -446,7 +446,8 @@ let data = [
         });
         let favourite=document.createElement("button")
         favourite.innerText="Add To Cart"
-        // favourite.innerText="Add to Cart"
+
+      
         favourite.addEventListener("click",()=>{
             let cartdata=JSON.parse(localStorage.getItem("Addtocart"))||[];
             let cartadded=false;
@@ -465,6 +466,7 @@ let data = [
             }
             displayproducts(data)
         });
+
         div.append(img,name,price,cart,favourite)
         container.append(div)
     })

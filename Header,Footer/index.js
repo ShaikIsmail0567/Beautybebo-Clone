@@ -16,9 +16,3 @@ start()
   }
 
 
-  let userdata=JSON.parse(localStorage.getItem("userdetails"))
-  let name1=document.getElementById("UserName")
-  name1.innerText=userdata[0].UserFirstName
-  console.log(userdata);
-  console.log(name1);
-  

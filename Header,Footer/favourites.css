@@ -26,12 +26,17 @@
     margin-top: 100px;
 }
 #container1{
+
     /* border: 2px solid black; */
+
+    border: 2px solid black;
+
     width: 95%;
     display: flex;
     justify-content: space-between;
 }
 #wishproducts{
+
     /* border: 2px solid black; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -60,4 +65,9 @@
     margin-top: 20px;
     text-decoration: none;
     margin-left: 5px;
+
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
 }
