@@ -15,4 +15,7 @@ start()
     }, 3000);
   }
 
-
+  let userdetails=JSON.parse(localStorage.getItem("userdetails"))
+  console.log(userdetails)
+  let name=document.getElementById("UserName")
+  name.innerText=userdetails[0].UserFirstName

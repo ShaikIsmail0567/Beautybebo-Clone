@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Checkout</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="payment.css">
+  
+ 
 </head>
 <body>
     <div class="banner">
         <img  src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="headerbanner">
     </div>
-    
-  
     <div id="headermiddle">
-        <div class="logo">
+        <div id="logo" >
+            <!-- <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="logo" id="logon" > -->
+
             <a href="./index.html"><img src="./logo.jpeg" alt="logo" id="logon" ></a>
+
+            
+
         </div>
     
     <div id="searchbar">
@@ -53,11 +60,14 @@
 
             <div class="whishlist">  <a href="./favourites.html"><img src="https://logodix.com/logo/1332846.png" alt="" ></a></div>
 
+            <!-- <div class="whishlist"> <img src="https://logodix.com/logo/1332846.png" alt=""></div> -->
+
             <div id="Acc">
                 <div id="user"><img
                         src="./user.jpg"
                         alt=""></div>
-                <h3 id="UserName" ></a> My Account</h3>
+                <!-- <h3 id="UserName"> My Account</h3> -->
+                <a href="./login.html"><span id="UserName">My Account</span></a>  
             </div>
         </div>
  </div> 
@@ -67,7 +77,7 @@
             <nav id="navbar">
             <ul>
                 <li>
-                    <a href="#">MAKEUP </a>
+                    <a href="products.html">MAKEUP </a>
                     <div class="megamenu">
                         <div class="megamenuitems" >
                             <h3>FACE</h3>
@@ -440,38 +450,101 @@
         
         <div id="cart-div">
             <img src="./cart-38-24.png" alt="cartlogo">
-            <span><h3 id="cart">My Cart</h3></span>
-            <span id="cartprice">₹0.00</span>
+
+            <span><h3 id="cart"><a href="./cart.html">My Cart</a></h3></span>
+
+
+            <span id="cartprice">0.00</span>
         </div>
     
  </div>
- <div id="CUSTOMERLOGIN">
-    <h2>CUSTOMER LOGIN</h2>
-</div>
- <div class="abovefooterimg">
-
-    <div id="signin">
-        <form >
-            <p>REGISTERED CUSTOMERS</p>
-            <hr>
-            <p>If you have an account, sign in with your email address.</p>
-            <p>Email *</p>
-            <input type="email" id="emailinput">
-            <p>Password *</p>
-            <input type="password" id="passinput">
-            <div id="signinbtn"> SIGN IN</div>
-            <!-- <input id="signinbtn" type="submit" name="submit" value="SIGN IN" /> -->
-            <p>Forgot Your Password?</p>
-            
-        </form>
-    </div>
-    <div id="NEW">
-        <p>NEW CUSTOMERS</p>
+ 
+ <div id="Mcontainer">
+    <div id="Hright">
+        <h2>Payment Method</h2>
+        <div style="display: flex; align-items: center;"> <input type="checkbox" value="COD" id="COD">
+            <p style="margin-left: 30px;">Cash On Delivery</p>
+        </div>
         <hr>
-        <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p>
-        <div id="Createaccount"> <a href="./signup.html">CREATE AN ACCOUNT</a> </div>
+        <div style="display: flex; align-items: center;"> <input type="checkbox" value="DB" id="DB">
+            <p style="margin-left: 30px;">Debit/Credit Card/Net banking/Wallet-PayUmoney</p>
+        </div>
+        <hr>
+        <p>Apply Discount Code</p>
+        <div id="thankyou" onclick="thanku()"><button>Submit</button></div>
     </div>
- </div>
+
+    <div id="left">
+        <div id="right">
+            <div>
+                <h2>ORDER SUMMARY</h2>
+                <hr>
+                <div id="Csubtotal">
+                    <span>Cart Subtotal</span>
+                    <h4 style="margin-left:170px ;">&#8377</h4>
+                    <h3 id="total">800</h3>
+                </div>
+                <hr>
+                <div id="Cshipping">
+                    <span>Shipping Charges</span>
+
+                    <h4 style="margin-left:130px ;">&#8377</h4>
+                    <h3 id="ship">65.29</h3>
+                </div>
+                <hr>
+                <div id="GST">
+                    <span>GST</span>
+
+                    <h4 style="margin-left:230px ;">&#8377</h4>
+                    <h3 id="gst">65.29</h3>
+                </div>
+                <hr>
+                <div id="Ototal">
+                    <span>Order Total Incl.GST</span>
+                    <h4 style="margin-left:120px;">&#8377</h4>
+                    <h3 id="withgst"></h3>
+                </div>
+                <hr>
+                <div id="Ototal">
+                    <span>Order Total Excl.GST</span>
+                    <h4 style="margin-left:120px;">&#8377</h4>
+                    <h3 id="withoutgst"></h3>
+                </div>
+            </div>
+
+        </div>
+        <div id="second">
+            <div>
+                <h2>SHIP TO:</h2>
+                <hr>
+                <p id="name"></p>
+                <p id="address"></p>
+                <p id="district"></p>
+                <p id="number"></p>
+
+            </div>
+        </div>
+        <div id="third">
+            <div>
+                <h2>SHIPPING METHOD:</h2>
+                <hr>
+                <p>Best Way-Max 7 Business days</p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
  <div id="footer">
     <div id="footerelements0">
         <h4>CONTACT INFO</h4>
@@ -537,4 +610,5 @@
  </div>
 </body>
 </html>
-<script src="./login.js"></script>
+<!-- <script src="./index.js"></script> -->
+<script src="./payment.js"></script>

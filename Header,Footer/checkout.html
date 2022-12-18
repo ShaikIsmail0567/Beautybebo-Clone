@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Checkout</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="login.css">
+    <!-- <link rel="stylesheet" href="favourites.css"> -->
+    <link rel="stylesheet" href="checkout.css">
+ 
 </head>
 <body>
     <div class="banner">
         <img  src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="headerbanner">
     </div>
-    
-  
     <div id="headermiddle">
-        <div class="logo">
+        <div id="logo" >
+            <!-- <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="logo" id="logon" > -->
+
             <a href="./index.html"><img src="./logo.jpeg" alt="logo" id="logon" ></a>
+
+            
+
         </div>
     
     <div id="searchbar">
@@ -53,11 +60,14 @@
 
             <div class="whishlist">  <a href="./favourites.html"><img src="https://logodix.com/logo/1332846.png" alt="" ></a></div>
 
+            <!-- <div class="whishlist"> <img src="https://logodix.com/logo/1332846.png" alt=""></div> -->
+
             <div id="Acc">
                 <div id="user"><img
                         src="./user.jpg"
                         alt=""></div>
-                <h3 id="UserName" ></a> My Account</h3>
+                <!-- <h3 id="UserName"> My Account</h3> -->
+                <a href="./login.html"><span id="UserName">My Account</span></a>  
             </div>
         </div>
  </div> 
@@ -67,7 +77,7 @@
             <nav id="navbar">
             <ul>
                 <li>
-                    <a href="#">MAKEUP </a>
+                    <a href="products.html">MAKEUP </a>
                     <div class="megamenu">
                         <div class="megamenuitems" >
                             <h3>FACE</h3>
@@ -439,39 +449,116 @@
         </nav>
         
         <div id="cart-div">
-            <img src="./cart-38-24.png" alt="cartlogo">
-            <span><h3 id="cart">My Cart</h3></span>
+            <!-- <img src="./cart-38-24.png" alt="cartlogo"> -->
+
+            <span><h3 id="cart"><a href="./cart.html">My Cart</a></h3></span>
+
+
             <span id="cartprice">₹0.00</span>
         </div>
     
  </div>
- <div id="CUSTOMERLOGIN">
-    <h2>CUSTOMER LOGIN</h2>
-</div>
- <div class="abovefooterimg">
-
-    <div id="signin">
-        <form >
-            <p>REGISTERED CUSTOMERS</p>
-            <hr>
-            <p>If you have an account, sign in with your email address.</p>
-            <p>Email *</p>
-            <input type="email" id="emailinput">
-            <p>Password *</p>
-            <input type="password" id="passinput">
-            <div id="signinbtn"> SIGN IN</div>
-            <!-- <input id="signinbtn" type="submit" name="submit" value="SIGN IN" /> -->
-            <p>Forgot Your Password?</p>
-            
-        </form>
-    </div>
-    <div id="NEW">
-        <p>NEW CUSTOMERS</p>
-        <hr>
-        <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p>
-        <div id="Createaccount"> <a href="./signup.html">CREATE AN ACCOUNT</a> </div>
-    </div>
+ <div class="open-div"></div>
+ <div id="lineTop">
+     <div id="circle1">1</div>
+     <div id="circle2">2</div>
+     <div id="lineTop1"></div>
+     <div id="lineTop2"></div>
  </div>
+ <div id="belowlinetoptitle">
+     <div>Shipping</div>
+     <div>Review Payment</div>
+ </div>
+
+
+ <div id="container1">
+
+     <form id="form">
+         <h1>Shipping Address</h1>
+         <hr>
+         <p>Email Address</p>
+         <input type="text" id="email">
+         <p>First Name</p>
+         <input type="text" id="first">
+         <p>Last Name</p>
+         <input type="text" id="last">
+         <p>Street Address</p>
+         <input type="text" id="street">
+         <p>City</p>
+         <input type="text" id="city">
+         <p>State</p>
+         <select name="" id="state">
+             <option value="">Select your State</option>
+             <option value="Andhra Pradesh">Andhra Pradesh</option>
+             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+             <option value="Assam">Assam</option>
+             <option value="Bihar">Bihar</option>
+             <option value="Chhattisgarh">Chhattisgarh</option>
+             <option value="Delhi">Delhi</option>
+             <option value="Goa">Goa</option>
+             <option value="Gujrat">Gujrat</option>
+             <option value="Haryana">Haryana</option>
+             <option value="Himachal Pradesh">Himachal Pradesh</option>
+             <option value="Jharkand">Jharkand</option>
+             <option value="Karnataka">Karnataka</option>
+             <option value="Kerla">Kerla</option>
+             <option value="Madhya Pradesh">Madhya Pradesh</option>
+             <option value="Maharashtra">Maharashtra</option>
+             <option value="Manipur">Manipur</option>
+             <option value="Meghalaya">Meghalaya</option>
+             <option value="Mizoram">Mizoram</option>
+             <option value="Nagaland">Nagaland</option>
+             <option value="Odisha">Odisha</option>
+             <option value="Punjab">Punjab</option>
+             <option value="Rajasthan">Rajasthan</option>
+             <option value="Sikkim">Sikkim</option>
+             <option value="Tamil Nadu">Tamil Nadu</option>
+             <option value="Telangana">Telangana</option>
+             <option value="Tripura">Tripura</option>
+             <option value="Uttar Pradesh">Uttar Pradesh</option>
+             <option value="Uttarakhand">Uttarakhand</option>
+             <option value="West Bengal">West Bengal</option>
+         </select>
+         <p>Zip/Postal Code </p>
+         <input type="text" id="zip">
+         <p>Country</p>
+         <select name="" id="country">
+             <option value="in">India</option>
+             <option value="us">USA</option>
+             <option value="nz">China</option>
+             <option value="nz">Nepal</option>
+             <option value="nz"> North Korea</option>
+             <option value="nz">Norway</option>
+             <option value="nz"> Russia</option>
+             <option value="nz"> Saudi Arabia</option>
+             <option value="nz">Sri Lanka</option>
+             <option value="nz">Thailand</option>
+             <option value="nz"> United Arab Emirates</option>
+         </select>
+         <p>Phone Number</p>
+         <input type="number" id="ph">
+         <div id="checkout_delivery_div_at">
+             <h3>Delivery Charges</h3>
+         </div>
+         <div id="checkout_delivery_at"><span>&#8377;0.00</span>
+             <span>Delivery in Max 7  Days</span>
+         </div>
+         <input type="submit" value="NEXT" id="submitdetails_at" >
+     </form>
+
+     <div id="summary"></div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
  <div id="footer">
     <div id="footerelements0">
         <h4>CONTACT INFO</h4>
@@ -537,4 +624,5 @@
  </div>
 </body>
 </html>
-<script src="./login.js"></script>
+<!-- <script src="./index.js"></script> -->
+<script src="./checkout.js"></script>
