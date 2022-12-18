@@ -17,6 +17,13 @@ function displayproducts(data){
     name.innerText=element.title;
     let price=document.createElement("h3")
     price.innerText=`₹${element.price}`
+    let deletes =document.createElement("button");
+    deletes.innerText="Delete"
+    deletes.addEventListener("click",()=>{
+      cartdata.splice(index,1)
+      localStorage.setItem("Wishlistcart",JSON.stringify(cartdata))
+      displayproducts(cartdata)
+    })
     let cart=document.createElement("button")
     cart.innerText="Add to Cart"
     cart.addEventListener("click",()=>{
@@ -35,15 +42,9 @@ function displayproducts(data){
           localStorage.setItem("Addtocart",JSON.stringify(cartdata))
           alert("Product Added To Cart")
         }
-        displayproducts(cartdata)
+        displayproducts(data)
     });
-    let deletes =document.createElement("button");
-        deletes.innerText="Delete"
-        deletes.addEventListener("click",()=>{
-          cartdata.splice(index,1)
-          localStorage.setItem("Wishlistcart",JSON.stringify(cartdata))
-          displayproducts(cartdata)
-        })
+
     div.append(img,name,price,cart,deletes)
     container.append(div)
 })
